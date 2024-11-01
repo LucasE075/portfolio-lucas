@@ -1,0 +1,506 @@
+/* ESTILO GERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    background-color: #140D1A;
+    height: 100vh;
+
+}
+
+.interface{
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.flex {
+    display: flex;    
+}
+
+button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #FFD452;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+
+button:hover{
+    box-shadow: 0px 0px 8px #f8c11a;
+}
+h2.titulo{
+    color: #f8c11a; 
+    font-size: 38px;
+    text-align: center;   
+}
+
+a{
+    color: #faeeca;
+}
+
+/*  ESTILO CABEÇALHO */
+
+header{
+    position: sticky;
+    z-index: 1200;
+    top: 1.5rem;
+    transition: background-color .3s;
+    margin: 20px;
+    
+}
+
+.navbar{
+    background-color: #42142A;
+    border-radius: 10rem;
+    padding: 4px 4%;
+    border-radius: 10rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 85%;
+  
+}
+
+header > .interface{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo-animado{
+    border: 0;
+    border-radius: 10px;
+
+}
+
+
+
+header a{
+    color: #faeeca;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover, .logo-animado:hover{
+    color: #FFD452;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+
+}
+
+header nav li{
+    display: inline-block;
+    padding: 0 40px;
+
+}
+
+
+/* ESTILO DO TOPO DO SITE */
+
+section.topo-do-site{
+    padding: 40px 4%;
+
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    gap: 5.62rem;    
+}
+
+.topo-do-site .img-topo-site .foto{
+    width: 50vh;
+    height: 50vh;
+    padding: 1rem;
+    border-radius: 50vh;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    box-shadow: 0px 0px 30px #f8c11a;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
+.topo-do-site .txt-topo-site h1{
+    color: #faeeca;
+    font-size: 58px;
+}
+
+.topo-do-site .txt-topo-site h2{
+    color: #faeeca;
+    font-size: 46px;
+}
+
+.topo-do-site .txt-topo-site .icon-list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border: 10px;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.topo-do-site .txt-topo-site i{
+    font-size: 70px;
+    color: #ff2e5f;
+    transition: .2s;
+}
+
+.topo-do-site .txt-topo-site i:hover{
+    box-shadow: 0px 0px 5px #f8c11a;
+    border-radius: 20px;
+
+}
+
+/* ESTILO SOBRE */
+
+section.sobre{
+    padding: 40px 4%;
+    box-shadow: 0px 0px 20px #242424;
+    color: #faeeca;
+
+}
+
+section.sobre p{
+    font-size: 26px;
+}
+
+section.sobre .flex{
+    align-content: center;
+    gap: 60px;
+
+}
+
+.sobre .txt-sobre, .txt-experiencia{
+    width: 100%;
+
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre .txt-experiencia{
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    background-color: #42142A;
+    
+
+}
+
+.sobre .txt-experiencia h2{
+    font-size: 30px;
+
+}
+
+/* ESTILO DA FORMAÇÃO */
+
+section.formacao{
+    padding: 40px 4%;
+
+}
+
+section.formacao .flex{
+    gap: 60px;
+
+}
+
+.formacao .formacoes-box{
+    color: #faeeca;
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    margin-top: 45px;
+    transition: .2s;
+    width: 30%;
+
+}
+
+.formacao .formacoes-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px #f8c11a;
+
+}
+
+.formacao .formacoes-box i{
+    font-size: 70px;
+    color: #FFD452;
+
+}
+
+.formacao .formacoes-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+
+}
+
+.formacoes-box .badge{
+    width: 20px;
+    height: 20px;
+}
+
+.certificacoes, .ms-bagdes{
+    list-style: none;
+    gap: 20px;
+ 
+
+}
+
+.ms-bagdes{
+    display: flex;
+    text-align: center;
+}
+
+
+/* ESTILO PROJETOS */
+
+section.projetos{
+    padding: 40px 4%;
+
+}
+
+section.projetos .flex{
+    justify-content: space-around;
+
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 40px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 2s;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+
+}
+.img-port2{
+    width: 360px;
+    height: 460px;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 40px;
+    background-size: cover;
+    background-position: 0% 100%;
+    transition: 2s;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.img-port2:hover{
+    background-position: 100% 100%;
+
+}
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b8;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+
+}
+
+.overlay:hover{
+    opacity: 1;
+    
+}
+
+/* ESTILO DO CONTATO */
+
+section.contato{
+    padding: 40px 4%;
+
+}
+
+form, .dados-para-contato{
+    width: 50%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+    margin: 0 auto;
+
+}
+
+form textarea{
+    resize: none;
+    height: 200px;
+}
+
+form .btn-enviar{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 30px;
+
+}
+
+form .btn-enviar input{
+    background-color: #f8c11a;
+    color: #000;
+    width: 100%;
+}
+
+form .btn-enviar input:hover{
+    box-shadow: 0 0 15px 5px #faeeca;
+    transform: scale(1);
+    cursor: pointer;
+    
+}
+
+.dados-para-contato {
+    color: #faeeca;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+    font-size: 28px;
+    
+}
+
+
+.dados-para-contato .dados a{
+    text-decoration: none;
+}
+
+.dados-para-contato .dados i{
+    font-size: 32px;
+
+}
+
+.dados-para-contato .dados i:hover{
+    color: green;
+    cursor: pointer;
+
+}
+
+
+.dados-para-contato .redes i{
+    font-size: 40px;
+    padding: 10px;
+
+}
+
+.dados-para-contato .redes i:hover{
+    color: #ff2e5f;
+    cursor: pointer;
+
+}
+
+/* ESTILO RODAPÉ */
+
+footer{
+    box-shadow: 0px 0px 20px #242424;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+    
+}
+
+footer .line-footer i{
+    font-size: 32px;
+    color: #faeeca;  
+    position: relative;
+    border-radius: 32px;  
+}
+
+footer .line-footer i:hover{
+    color: #fff;
+    cursor: pointer;
+    transition: 1s all;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0#f8c11a;
+
+}
+
+@media screen and (max-width: 1020px){
+    /* CLASSES GERAIS */
+    
+    .flex, .interface{
+        flex-direction: column;
+        text-align: center;
+        vertical-align: middle;
+    }
+    /* TOPO DO SITE */
+
+    .topo-do-site .txt-topo-site i{
+        font-size: 3.6rem;
+    }
+
+
+    /* CABEÇALHO */
+
+    .navbar{
+        display: none;
+    }
+    
+    /* Formações */
+
+    .formacao .formacoes-box{
+        width: 100%;
+    }
+     
+}
