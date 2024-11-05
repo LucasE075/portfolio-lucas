@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: #140D1A;
+    background-color: #faeeca;
     height: 100vh;
 
 }
@@ -45,7 +45,7 @@ h2.titulo{
 }
 
 a{
-    color: #faeeca;
+    color: #140D1A;
 }
 
 /*  ESTILO CABEÇALHO */
@@ -114,6 +114,7 @@ header nav li{
 
 section.topo-do-site{
     padding: 40px 4%;
+    color: #140D1A;
 
 }
 
@@ -143,13 +144,11 @@ section.topo-do-site .flex{
     }
 }
 
-.topo-do-site .txt-topo-site h1{
-    color: #faeeca;
+.topo-do-site .txt-topo-site h1{ 
     font-size: 58px;
 }
 
 .topo-do-site .txt-topo-site h2{
-    color: #faeeca;
     font-size: 46px;
 }
 
@@ -181,12 +180,12 @@ section.topo-do-site .flex{
 section.sobre{
     padding: 40px 4%;
     box-shadow: 0px 0px 20px #242424;
-    color: #faeeca;
 
 }
 
-section.sobre p{
+section.sobre .txt-experiencia h3, section.sobre p{
     font-size: 26px;
+    color: #faeeca;
 }
 
 section.sobre .flex{
@@ -203,6 +202,7 @@ section.sobre .flex{
 .sobre .txt-sobre p{
     margin: 20px 0;
     text-align: justify;
+    color: #140D1A;
 }
 
 .sobre .txt-experiencia{
@@ -232,7 +232,7 @@ section.formacao .flex{
 }
 
 .formacao .formacoes-box{
-    color: #faeeca;
+    color: #140D1A;
     padding: 40px;
     border-radius: 20px;
     border: 2px solid #fff;
@@ -247,6 +247,8 @@ section.formacao .flex{
     box-shadow: 0px 0px 20px #f8c11a;
 
 }
+
+
 
 .formacao .formacoes-box i{
     font-size: 70px;
@@ -263,18 +265,19 @@ section.formacao .flex{
 .formacoes-box .badge{
     width: 20px;
     height: 20px;
+
 }
 
 .certificacoes, .ms-bagdes{
     list-style: none;
     gap: 20px;
  
-
 }
 
 .ms-bagdes{
     display: flex;
     text-align: center;
+
 }
 
 
@@ -308,6 +311,7 @@ section.projetos .flex{
     background-position: 100% 100%;
 
 }
+
 .img-port2{
     width: 360px;
     height: 460px;
@@ -326,7 +330,6 @@ section.projetos .flex{
     background-position: 100% 100%;
 
 }
-
 
 .overlay{
     position: absolute;
@@ -386,6 +389,7 @@ form input, form textarea{
 form textarea{
     resize: none;
     height: 200px;
+
 }
 
 form .btn-enviar{
@@ -401,28 +405,29 @@ form .btn-enviar input{
     background-color: #f8c11a;
     color: #000;
     width: 100%;
+
 }
 
 form .btn-enviar input:hover{
-    box-shadow: 0 0 15px 5px #faeeca;
+    box-shadow: 0 0 15px 5px #140D1A;
     transform: scale(1);
     cursor: pointer;
     
 }
 
 .dados-para-contato {
-    color: #faeeca;
+    color: #140D1A;
     width: 100%;
     gap: 10px;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     font-size: 28px;
     
 }
-
-
+    
 .dados-para-contato .dados a{
     text-decoration: none;
+
 }
 
 .dados-para-contato .dados i{
@@ -462,19 +467,20 @@ footer{
 
 footer .line-footer i{
     font-size: 32px;
-    color: #faeeca;  
+    color: #000;  
     position: relative;
-    border-radius: 32px;  
+    border-radius: 32px;
+    
 }
 
 footer .line-footer i:hover{
-    color: #fff;
-    cursor: pointer;
-    transition: 1s all;
+    color: #242424;
     cursor: pointer;
     box-shadow: 0 0 10px 0#f8c11a;
 
 }
+
+/* RESPOSIVIDADE */
 
 @media screen and (max-width: 1020px){
     /* CLASSES GERAIS */
@@ -483,24 +489,57 @@ footer .line-footer i:hover{
         flex-direction: column;
         text-align: center;
         vertical-align: middle;
+
     }
+
+    .formacao .formacoes-box, .projetos .img-port, .img-port2, .contato .formulario, .dados{
+        width: 100%;
+
+    }
+
     /* TOPO DO SITE */
 
-    .topo-do-site .txt-topo-site i{
-        font-size: 3.6rem;
+    .topo-do-site .img-topo-site .foto{
+        width: 40vh;
+        height: 40vh;
+
+    }
+    
+    .topo-do-site .txt-topo-site h1{
+        font-size: 46px;
+
+    }
+    
+    .topo-do-site .txt-topo-site h2{
+        font-size: 32px;
+
     }
 
+    .topo-do-site .txt-topo-site i{
+        font-size: 3rem;
+
+    }
 
     /* CABEÇALHO */
 
     .navbar{
         display: none;
+
+    }
+
+    /* Certificações */
+
+    .ms-bagdes{
+        align-items: center;
+        justify-content: center; 
+
     }
     
-    /* Formações */
+    /* Contato */
 
-    .formacao .formacoes-box{
-        width: 100%;
+    .contato .dados-para-contato .dados{
+        display: block;
+        font-size: 24px;
+
     }
-     
 }
